@@ -1,0 +1,243 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+/* LAYOUT */
+.layout {
+    display: flex;
+    height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 260px;
+    background: #fefdff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sidebar h2 {
+    margin-bottom: 10px;
+}
+
+.sidebar button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    width: 100%;
+    padding: 12px;
+
+    background: rgb(123, 62, 173);
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background: rgb(100, 50, 150);
+}
+
+.sidebar i {
+    width: 20px;
+    height: 20px;
+}
+
+/* MAIN */
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+/* HEADER CHAT */
+.chat-header {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background: #e9e7ff;
+    border-radius: 10px 10px 0 0;
+    margin-top: 20px;
+}
+
+/* CHAT */
+.chat-box {
+    width: 100%;
+    max-width: 800px;
+    flex: 1;
+
+    padding: 20px;
+    overflow-y: auto;
+
+    background: white;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* MENSAGENS */
+.msg {
+    padding: 12px;
+    border-radius: 10px;
+    max-width: 70%;
+}
+
+.bot {
+    background: #e5e5e5;
+}
+
+.user {
+    background: #302c2c;
+    color: white;
+    margin-left: auto;
+}
+
+/* INPUT */
+.input-area {
+    width: 100%;
+    max-width: 800px;
+
+    display: flex;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-top: none;
+
+    background: white;
+    border-radius: 0 0 10px 10px;
+}
+
+.input-area textarea {
+    flex: 1;
+    height: 60px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    resize: none;
+}
+
+.input-area button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    border: none;
+    background: #7b6cff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* HISTÓRICO */
+.historico-container {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 40px;
+}
+
+.historico-item {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+
+    cursor: pointer;
+}
+
+.historico-item:hover {
+    transform: scale(1.02);
+}
+
+.historico-item i {
+    width: 24px;
+    height: 24px;
+}
+
+/* CONTAINER PADRÃO (patrimônio + fechamento) */
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 30px;
+}
+
+/* TOPO */
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+}
+
+.botoes button {
+    width: auto;
+}
+
+/* CARDS */
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* GRID */
+.grid {
+    display: flex;
+    gap: 15px;
+}
+
+.grid .card {
+    flex: 1;
+}
+
+/* RESUMO (fechamento) */
+.resumo {
+    display: flex;
+    gap: 15px;
+}
+
+.resumo .card {
+    flex: 1;
+}
+
+/* MESES */
+.meses {
+    margin-top: 20px;
+}
+
+.mes {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* CORES */
+.verde {
+    color: green;
+}
+
+.vermelho {
+    color: red;
+}
